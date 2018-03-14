@@ -23,4 +23,9 @@ describe('Haiku', function() {
     expect(splitArray).toEqual(['frog','leaps','in']);
   });
 
+  it('will return vowel count except for two vowels together', function() {
+    var result = reusableHaiku.syllableCount("haiku");
+    expect(result).toEqual(2);
+  });
+
 });
